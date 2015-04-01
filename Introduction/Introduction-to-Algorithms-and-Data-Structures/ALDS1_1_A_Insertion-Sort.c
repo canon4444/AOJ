@@ -1,4 +1,4 @@
-// http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_A
+// http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_A&lang=jp
 
 #include <stdio.h>
 
