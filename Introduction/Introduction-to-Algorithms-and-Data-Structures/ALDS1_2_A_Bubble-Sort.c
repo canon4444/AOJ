@@ -7,10 +7,13 @@ void bubbleSort(int A[], const int N)
     int i;
     int flag = 1, cnt = 0;
 
-    while( flag ){
+    while( flag ){ //ここを消して下2行でも可 (1)
+    //int j;
+    //for( j = 0; flag; ++j ){
         flag = 0;
 
-        for( i = N-1; 0 < i; --i )
+        for( i = N-1; 0 < i; --i ) //ここを消して下1行でも可 (1)
+        //for( i = N-1; j < i; --i )
             if( A[i] < A[i-1] ){
                 int tmp = A[i];
                 A[i] = A[i-1];
