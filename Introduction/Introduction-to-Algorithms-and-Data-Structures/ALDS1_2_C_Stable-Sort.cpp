@@ -5,10 +5,10 @@
 #include <cstdlib>
 using namespace std;
 
-typedef struct {
+struct card {
     char suit;
     int value;
-} card;
+};
 
 void bubbleSort(card A[], const int N)
 {
