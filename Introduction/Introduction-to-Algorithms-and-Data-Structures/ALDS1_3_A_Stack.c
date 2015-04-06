@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int value[100];
 int sp = 0;
@@ -16,13 +17,9 @@ int pop()
     return value[--sp];
 }
 
-void operand(const char operand)
+void operand(const char operand[])
 {
-    int ch, val = operand - '0';
-    while( (ch = getchar()) != ' ' ){
-        val = val * 10 + (ch - '0'); 
-    }
-    push(val);
+    push(atoi(operand));
 }
 
 void operator(const char operator)
@@ -40,12 +37,12 @@ void operator(const char operator)
 int main()
 {
     while( 1 ){
-        int ch = getchar();
-        if( ch == ' ' || ch == '\n' ) continue;
-        if( ch == EOF ) break;
+        char ch[256];
+        if( scanf("%s", ch) == EOF ) break;
+        if( strcmp(ch, "\n") == 0 ) continue;
         
-        switch( ch ){
-        case '+': case '-': case '*': operator(ch); break;
+        switch( ch[0] ){
+        case '+': case '-': case '*': operator(ch[0]); break;
         default : operand(ch); break;
         }
     }
