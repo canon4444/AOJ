@@ -1,3 +1,5 @@
+// http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_10_A
+
 #include <stdio.h>
 
 int dp[45];
