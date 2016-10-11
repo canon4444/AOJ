@@ -10,5 +10,5 @@ Cの予定ですが，途中でC++に変わるかもしれません．
 
 
 [0]: http://judge.u-aizu.ac.jp/onlinejudge/index.jsp "AIZU ONLINE JUDGE"
-[1]: https://book.mynavi.jp/ec/products/detail/id=35408 "プログラミングコンテストのためのアルゴリズムとデータ構造（渡部有隆著，Ozy・秋葉拓哉協力）"
+[1]: http://amzn.to/2eohcim "プログラミングコンテストのためのアルゴリズムとデータ構造（渡部有隆著，Ozy・秋葉拓哉協力）"
 [2]: https://book.mynavi.jp/support/pc/5295/ "サポートサイト"
